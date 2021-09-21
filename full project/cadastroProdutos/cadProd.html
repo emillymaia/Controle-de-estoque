@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastrar um novo produto</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>Cadastrar um novo produto</h1>
+    <form id="register-form" action="">
+      <div class="full-box">
+        <label for="nameP">Nome do produto</label>
+        <input type="text" name="nameP" id="nameP" placeholder="digite o nome do produto" data-min-length="2">
+      </div>
+      <div class="half-box spacing">
+          <label for="ref">referência</label>
+          <input type="text" name="ref" id="ref" placeholder="digite o código de referência" data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div class="half-box">
+          <label for="tam">tamanhos</label>
+          <input type="text" name="tam" id="tam" placeholder="ex: P/M/G/GG">
+      </div>
+      <div class="half-box spacing">
+        <label for="emEstoque">estoque</label>
+        <input type="number" name="emEstoque" id="emEstoque" placeholder="ex: 10">
+      </div>
+      <div class="half-box">
+        <label for="valor">valor</label>
+        <input type="number" name="valor" id="valor" placeholder="digite o valor do produto">
+      </div>
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Registrar">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+  <script src="./js/script.js"></script>
+</body>
+</html>
